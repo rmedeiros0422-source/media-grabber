@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Política de privacidade — Media Grabber</title>
+<style>
+  :root {
+    --cor-primaria-escura: #0b7a5d;
+    --cor-texto: #1a1f1e;
+    --cor-texto-suave: #55625e;
+  }
+  body {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--cor-texto);
+    line-height: 1.6;
+  }
+  h1 { font-size: 26px; }
+  h2 { font-size: 18px; margin-top: 36px; }
+  p, li { color: var(--cor-texto-suave); }
+  .atualizado { font-size: 13px; color: var(--cor-texto-suave); margin-bottom: 32px; }
+  a { color: var(--cor-primaria-escura); }
+  .voltar { display: inline-block; margin-bottom: 24px; font-size: 14px; }
+</style>
+</head>
+<body>
+
+<a class="voltar" href="index.html">&larr; Voltar</a>
+<h1>Política de privacidade — Media Grabber</h1>
+<p class="atualizado">Última atualização: agosto de 2026</p>
+
+<p>Esta extensão para Chrome ("Media Grabber") não coleta nem armazena em servidor próprio nenhum dado de navegação. A varredura da página e a montagem do .zip acontecem localmente, no seu navegador.</p>
+
+<h2>O que a extensão faz com o conteúdo das páginas</h2>
+<p>Quando você clica no ícone da extensão, ela examina localmente o DOM já carregado da página aberta em busca de imagens, vídeos e áudios, e mostra essa lista só pra você, no popup. Nenhum conteúdo da página é enviado a servidores nossos.</p>
+
+<h2>Downloads e o recurso "Baixar como .zip"</h2>
+<p>Ao baixar um arquivo individual, a extensão usa a API de downloads do próprio navegador, que baixa o arquivo diretamente da sua fonte original. Ao usar "Baixar como .zip", a extensão busca os bytes de cada arquivo selecionado diretamente do site onde ele está hospedado (não por meio de nenhum servidor nosso), monta o .zip localmente no seu navegador e inicia o download - o conteúdo desses arquivos nunca passa por nenhum servidor controlado por nós.</p>
+
+<h2>Pagamento do recurso "Baixar como .zip"</h2>
+<p>O desbloqueio desse recurso ($5, pagamento único) é processado por um serviço terceiro, a <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>, que usa o Stripe como processadora de pagamento. Ao optar por pagar, seu e-mail e dados de pagamento são coletados diretamente pela ExtensionPay/Stripe - nós, desenvolvedores desta extensão, nunca vemos ou armazenamos número de cartão. Recebemos apenas uma confirmação simples de que o pagamento foi feito ("pago: sim/não"), guardada localmente no seu navegador. Consulte a <a href="https://extensionpay.com" target="_blank" rel="noopener">política da própria ExtensionPay</a> pra mais detalhes sobre como eles tratam esses dados.</p>
+
+<h2>Permissões usadas</h2>
+<ul>
+  <li><strong>Acesso a todos os sites (host permissions)</strong>: necessário pra examinar o conteúdo de mídia da página em que você está, já que isso pode ser qualquer site.</li>
+  <li><strong>downloads</strong>: usada pra salvar os arquivos selecionados (individualmente ou como .zip) no seu computador.</li>
+  <li><strong>storage</strong>: guarda localmente se você já pagou pelo recurso de .zip (fornecida pela biblioteca ExtensionPay).</li>
+</ul>
+
+<h2>Compartilhamento com terceiros</h2>
+<p>Não vendemos nem compartilhamos dados com terceiros, além do processamento de pagamento pela ExtensionPay/Stripe descrito acima (só quando você opta por pagar). Não rodamos analytics dentro da extensão.</p>
+
+<h2>Contato</h2>
+<p>Dúvidas sobre esta política: <a href="mailto:rmedeiros0422@gmail.com">rmedeiros0422@gmail.com</a></p>
+
+</body>
+</html>
